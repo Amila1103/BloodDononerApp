@@ -1,29 +1,66 @@
-# 🩸 BloodDononerApp
+# BloodDononerApp
 
-### Blood Donor–Recipient Matching & Emergency Blood Request Management System
+### Blood Donor–Recipient Matching and Emergency Blood Request Management System
 
-**IT3060 – Human Computer Interaction | Milestone 03**
-
+**IT3060 – Human Computer Interaction | Milestone 03**  
 **Group ID:** KANDY_UNI_Group12  
-**University:** Sri Lanka Institute of Information Technology (SLIIT)
+**Institution:** Sri Lanka Institute of Information Technology (SLIIT)
 
 ---
 
-## 📱 Project Overview
+## Project Overview
 
-BloodDononerApp is an Android-based Blood Donation Management System designed to connect blood donors, recipients, hospitals, and blood bank staff.
+BloodDononerApp is a native Android application developed to simplify blood donation management, donor–recipient matching, hospital blood inventory monitoring, and emergency blood request coordination.
 
-The system aims to simplify donor searching, emergency blood requests, donation appointments, blood inventory management, and administrative operations.
+The system provides dedicated interfaces for regular users, hospital staff, and administrators.
 
-It provides three main user roles:
+The main objective is to help users find blood donors, check blood availability, manage blood donation activities, and coordinate urgent requests through a centralized mobile platform.
 
-- **USER** – Blood donors and recipients
-- **STAFF** – Hospital and blood bank staff
-- **ADMIN** – System administrators
+## Key Features
+
+### User Module
+
+- User registration and secure login
+- User profile creation and management
+- Blood donor search and matching
+- Blood bank availability monitoring
+- Blood group and location filtering
+- Emergency blood request creation
+- Donation appointments and history
+- Donor availability management
+- Notifications
+- Help & Support
+
+### Staff Module
+
+- Staff Dashboard
+- Appointment Management
+- Appointment Details and Donor Check-in
+- Blood Inventory Management
+- Donor Matching
+- Donor Records
+- Donor Screening
+- Emergency Request Management
+- Staff Notifications
+- Staff Profile Management
+- Donation Recording
+- Emergency Request Details
+
+### Admin Module
+
+- Admin Dashboard
+- User Management
+- Staff Management
+- Hospital Management
+- Blood Inventory Monitoring
+- Emergency Request Management
+- Donation Management
+- Reports and Notifications
+- Account Activation and Suspension
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 | Technology | Purpose |
 |---|---|
@@ -34,109 +71,123 @@ It provides three main user roles:
 | Firebase Firestore | Cloud Database |
 | Material Design | UI Components |
 | Figma | UI/UX Design and Prototyping |
-| GitHub | Version Control and Collaboration |
+| Git & GitHub | Version Control and Collaboration |
 | Gradle | Android Build Management |
 
 ---
 
-# 👥 Group Members & Individual Contributions
+## System Architecture
 
-## 👨‍💻 Member 01 – IT23571266
+The application uses an Android Activity-based architecture.
+
+- **Frontend:** Kotlin and Android XML layouts
+- **Authentication:** Firebase Authentication
+- **Database:** Firebase Cloud Firestore
+- **Navigation:** Role-based Android Activities
+- **User Roles:** USER, STAFF, ADMIN
+
+Each role provides specialized screens and operations according to its responsibilities.
+
+---
+
+# Group Members and Individual Contributions
+
+The following work distribution is based on the Milestone 03 group report and the team's updated Staff and Admin module assignments.
+
+| Student ID | Member Name | Assigned Responsibilities |
+|---|---|---|
+| IT23571266 | De Silva W.A.P.M | Authentication, Onboarding and User Profile Management |
+| IT23772540 | R.M.A.D. Rathnayake | Donor Search, Matching and Admin Module |
+| IT23759398 | N.T.I.N. Karunarathna | Emergency Blood Request Management |
+| IT23536302 | R.M.A.D. Rathnayaka | Staff Module, Donor and Blood Availability, Notifications, Donation History and Help & Support |
+
+---
+
+## Member 01 – Authentication and User Profile Management
 
 **Name:** De Silva W.A.P.M  
 **Student ID:** IT23571266
 
-### Assigned Module: Authentication & User Profile Management
-
-Responsible for designing and implementing the authentication, onboarding, and user profile interfaces.
-
-**Assigned Screens:**
+### Assigned Screens
 
 1. Splash Screen
 2. Onboarding Screens
-3. User Registration
-4. User Login
+3. Login Screen
+4. Registration Screen
 5. Forgot Password
 6. Profile Setup
 7. My Profile
 8. Edit Profile
 9. Privacy Settings
 
-**Main Responsibilities:**
+### Main Responsibilities
 
-- Develop user-friendly authentication interfaces.
-- Implement user registration and login workflows.
-- Manage profile creation and editing.
-- Provide password recovery functionality.
-- Design privacy and account settings screens.
-- Support Firebase-based authentication and profile management.
+- Develop user authentication interfaces.
+- Implement registration and login workflows.
+- Create onboarding and profile setup interfaces.
+- Manage user profile information and editing.
+- Support password recovery functionality.
+- Implement privacy and account settings interfaces.
+- Integrate authentication-related operations with Firebase.
 
 ---
 
-## 👨‍💻 Member 02 – IT23772540
+## Member 02 – Donor Search and Admin Management
 
 **Name:** R.M.A.D. Rathnayake  
 **Student ID:** IT23772540
 
-### Assigned Modules: Donor Search & Admin Management
+### Part A – Donor Search and Matching
 
-Responsible for donor discovery and matching interfaces, along with the Admin Role.
-
-### Part A – Donor Search & Matching
-
-**Assigned Screens:**
+**Assigned Screens**
 
 1. User Home
 2. Find Donor
 3. Donor Search Results
 4. Donor Details
 5. Hospital Information
-6. Donor Matching and Contact Options
+6. Donor Contact and Matching Interfaces
 
-**Main Responsibilities:**
+**Main Responsibilities**
 
-- Implement donor searching and filtering.
-- Support blood group and location-based donor discovery.
-- Display matching donor information.
-- Provide donor contact functionality.
+- Implement donor searching functionality.
+- Support blood group and location-based filtering.
+- Display matching donor records.
+- Provide donor details and contact actions.
 - Develop hospital-related user interfaces.
 
-### Part B – Admin Role
+### Part B – Admin Module
 
-**Assigned Admin Areas:**
+**Assigned Admin Screens and Areas**
 
 1. Admin Dashboard
 2. User Management
 3. Staff Management
 4. Hospital Management
 5. Blood Inventory Monitoring
-6. Emergency Request Management
+6. Emergency Requests Management
 7. Donation Management
 8. Admin Notifications
-9. Reports and Administrative Overview
-10. Account Activation and Suspension
+9. Admin Reports
+10. Admin Profile and Account Management
 
-**Main Responsibilities:**
+**Main Responsibilities**
 
-- Develop and maintain administrator interfaces.
-- Manage user and staff accounts.
-- Support hospital management.
-- Monitor emergency blood requests.
-- Provide administrative inventory and donation views.
-- Support account status and management operations.
+- Develop administrative management interfaces.
+- Manage user and staff account information.
+- Support hospital registration and management.
+- Monitor blood inventory and emergency requests.
+- Manage account activation and suspension.
+- Support donation records and administrative reporting.
 
 ---
 
-## 👨‍💻 Member 03 – IT23759398
+## Member 03 – Emergency Blood Request Management
 
 **Name:** N.T.I.N. Karunarathna  
 **Student ID:** IT23759398
 
-### Assigned Module: Emergency Blood Request Management
-
-Responsible for the emergency blood request interfaces within the User Role.
-
-**Assigned Screens:**
+### Assigned Screens
 
 1. Create Emergency Request
 2. Emergency Requests Feed
@@ -144,29 +195,28 @@ Responsible for the emergency blood request interfaces within the User Role.
 4. My Requests
 5. Request Status
 
-**Main Responsibilities:**
+### Main Responsibilities
 
-- Design emergency blood request forms.
-- Implement request submission workflows.
+- Develop emergency blood request interfaces.
+- Implement request submission and validation.
 - Display emergency blood request information.
-- Provide request history and status tracking.
-- Support request cancellation where applicable.
-- Improve request navigation and user feedback.
+- Provide request history and tracking.
+- Support request cancellation and status management.
+- Improve emergency request navigation and feedback.
+- Integrate request-related data with Firebase Firestore.
 
 ---
 
-## 👨‍💻 Member 04 – IT23536302
+## Member 04 – Staff and Blood Management
 
 **Name:** R.M.A.D. Rathnayaka  
 **Student ID:** IT23536302
 
-### Assigned Modules: Staff Role & User Blood Management
+### Part A – Staff Module
 
-Responsible for the Staff Role screens and assigned blood management features within the User Role.
+Responsible for hospital staff operations, blood inventory management, donor screening, donation recording, and emergency request coordination.
 
-### Part A – Staff Role
-
-**Assigned Screens and GitHub Branches:**
+**Assigned Staff Screens and GitHub Branches**
 
 | Screen | GitHub Branch |
 |---|---|
@@ -183,20 +233,20 @@ Responsible for the Staff Role screens and assigned blood management features wi
 | Staff Record Donation | `staff-record-donation` |
 | Staff Request Details | `staff-request-details` |
 
-**Main Responsibilities:**
+**Main Responsibilities**
 
-- Develop the Staff Dashboard.
-- Implement hospital blood inventory management.
-- Manage blood donation appointments.
-- Support donor screening and matching.
-- Record completed blood donations.
+- Develop Staff Dashboard and navigation.
+- Implement blood donation appointment management.
+- Manage hospital blood inventory and stock updates.
+- Support donor matching and donor screening workflows.
 - Display and manage donor records.
-- Support emergency request verification and status updates.
-- Implement staff notification and profile interfaces.
+- Record completed blood donations.
+- Manage emergency blood requests and status changes.
+- Develop staff notifications and profile interfaces.
 
-### Part B – User Role
+### Part B – User Module
 
-**Assigned Features:**
+**Assigned User Features**
 
 1. Donor Availability
 2. Blood Availability
@@ -205,107 +255,129 @@ Responsible for the Staff Role screens and assigned blood management features wi
 5. Blood Bank Availability
 6. Help & Support
 
-**Additional GitHub Branches:**
+**Additional GitHub Branches**
 
 | Screen | GitHub Branch |
 |---|---|
 | Blood Bank Availability | `user-blood-bank-availability` |
 | Help & Support | `user-help-support` |
 
-**Main Responsibilities:**
+**Main Responsibilities**
 
 - Display hospital blood bank availability.
-- Support searching and filtering available blood stock.
-- Present blood group and availability information.
-- Provide user guidance and frequently asked questions.
-- Support blood donation information and Help & Support interfaces.
-- Contribute to donor availability, notifications, and donation history features.
+- Retrieve hospital blood stock information.
+- Support blood group searching and filtering.
+- Contribute to donor availability management.
+- Support user notifications and donation history.
+- Develop Help & Support and blood donation guidance interfaces.
 
 ---
 
-# 🔐 System Roles
+## Project File Structure
 
-### User Role
-Provides access to donor search, blood availability, donation history, emergency requests, notifications, and account management.
+```text
+BloodDononerApp/
+├── app/
+│   └── src/
+│       └── main/
+│           ├── java/
+│           │   └── com/example/blooddononerapp/
+│           │       └── Kotlin Activity and Adapter files
+│           ├── res/
+│           │   ├── layout/
+│           │   │   └── XML screen layouts
+│           │   ├── drawable/
+│           │   │   └── Icons and background resources
+│           │   └── values/
+│           │       └── App resources
+│           └── AndroidManifest.xml
+├── Gradle configuration files
+└── README.md
+```
 
-### Staff Role
-Provides hospital staff with appointment management, donor screening, blood inventory management, donation recording, and emergency request coordination.
-
-### Admin Role
-Provides system management interfaces for users, staff, hospitals, emergency requests, donations, inventory, and administrative reports.
+This represents the intended integrated Android project structure. Individual feature branches may contain only their relevant implementation files.
 
 ---
 
-# 📁 GitHub Branch Organization
+## GitHub Branch Organization
 
-The project uses individual feature branches to organize development contributions.
+The repository uses feature-specific branches to organize individual development contributions.
 
-Each screen-specific branch may include:
+Each branch may include:
 
 - Kotlin Activity files
 - Kotlin Adapter files
-- XML Layout files
+- XML layout files
 - Drawable XML resources
 - Screen-specific documentation
 
-The `main` branch is intended to contain the integrated project following review and merging of feature contributions.
+The `main` branch is intended to contain the integrated project following review and merging.
+
+This approach supports clearer contribution tracking and easier code review.
 
 ---
 
-# 🚀 Project Objectives
+## Setup and Installation
 
-1. Improve access to blood donor information.
-2. Simplify donor–recipient matching.
-3. Improve emergency blood request coordination.
-4. Provide blood bank and hospital stock visibility.
-5. Support organized donation appointment management.
-6. Provide efficient hospital staff workflows.
-7. Improve administrative oversight.
-8. Deliver a simple and accessible Android experience.
+After the complete Android project has been integrated:
 
----
-
-# ⚙️ Setup & Installation
-
-To run the complete application:
-
-1. Clone or download the integrated repository.
-2. Open the Android project in Android Studio.
+1. Clone or download the repository.
+2. Open the project in Android Studio.
 3. Install the required Android SDK.
-4. Configure Firebase Authentication and Cloud Firestore.
-5. Add the appropriate Firebase configuration file.
-6. Synchronize Gradle dependencies.
-7. Build and run the application using an Android emulator or physical Android device.
-8. Test the User, Staff, and Admin workflows.
+4. Configure the Firebase project.
+5. Add the appropriate `google-services.json` to the Android app module.
+6. Enable Firebase Authentication.
+7. Configure Firebase Firestore and security rules.
+8. Synchronize Gradle dependencies.
+9. Run the application using an Android emulator or physical device.
+10. Test the User, Staff, and Admin workflows.
 
-**Note:** A runnable build requires the complete Android project, its dependencies, and the correct backend configuration. Individual screen branches are not necessarily standalone applications.
+**Minimum Android SDK:** 24  
+**Compile SDK:** 36  
+**Target SDK:** 36
+
+A runnable build requires the complete Android project and correctly configured Firebase services.
 
 ---
 
-# 📚 Academic Information
+## Project Objectives
+
+- Improve access to blood donor information.
+- Reduce difficulties in finding available blood donors.
+- Simplify donor–recipient matching.
+- Support emergency blood request coordination.
+- Provide hospital blood stock information.
+- Improve donation appointment management.
+- Support hospital staff with dedicated management interfaces.
+- Provide administrators with centralized management tools.
+- Deliver a user-friendly and accessible Android application.
+
+---
+
+## Academic Information
 
 **Module:** IT3060 – Human Computer Interaction  
 **Assessment:** Milestone 03  
+**Project:** Blood Donor–Recipient Matching and Emergency Blood Request App  
 **Group:** KANDY_UNI_Group12  
 **Institution:** Sri Lanka Institute of Information Technology
 
-### GitHub Repository
+### Project Repository
 
 https://github.com/Amila1103/BloodDononerApp
 
 ---
 
-## 👥 Development Team
+## Project Status
 
-- **IT23571266** – De Silva W.A.P.M
-- **IT23772540** – R.M.A.D. Rathnayake
-- **IT23759398** – N.T.I.N. Karunarathna
-- **IT23536302** – R.M.A.D. Rathnayaka
+Academic group project organized into individual development branches covering User, Staff, and Admin features.
 
-*The original user-interface workload follows the group Milestone 03 allocation. Staff and Admin individual responsibilities reflect the team's updated allocation.*
+The original user-interface workload follows the Milestone 03 report. Individual Staff and Admin responsibilities reflect the team's updated allocation.
+
+Complete-project integration and verification should be performed after merging the required development branches.
 
 ---
 
 **Developed by KANDY_UNI_Group12 – SLIIT**
 
-*BloodDononerApp – Connecting Donors, Recipients, and Healthcare Professionals.*
+*BloodDononerApp – Connecting blood donors, recipients, and healthcare staff through technology.*
